@@ -54,7 +54,7 @@
                 <p class="hero-role" th:text="${'Project Engineer — Software Development'}">Project Engineer — Software Development</p>
                 <p class="hero-org">Wipro Ltd. <span aria-hidden="true">/</span> FedEx <span class="hero-period" th:text="${'January 2020 – August 2021'}">January 2020 – August 2021</span></p>
                 <p class="hero-location">Hyderabad, India</p>
-                <p class="hero-proposition">Built and operated enterprise Java/Spring Boot logistics systems supporting <strong>$500M+</strong> in annual shipment operations with measurable reliability and performance gains.</p>
+                <p class="hero-proposition">Built and operated enterprise Java/Spring Boot logistics systems supporting <strong th:text="${portfolio.metrics['wiproFedEx']['annualShipmentOperations']}">$500M+</strong> in annual shipment operations with measurable reliability and performance gains.</p>
                 <div class="hero-actions">
                     <a href="#dashboard" class="btn btn-primary">View Engineering Impact</a>
                     <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
@@ -76,27 +76,27 @@
                 </div>
                 <div class="metrics-grid">
                     <div class="metric-card reveal">
-                        <div class="metric-value" data-target="22" data-suffix="%">0%</div>
+                        <div class="metric-value" th:text="${portfolio.metrics['wiproFedEx']['throughputImprovement']}" data-target="22" data-suffix="%">22%</div>
                         <div class="metric-label">Throughput Improvement</div>
                         <div class="metric-detail">Async processing, thread-pool tuning, Redis caching</div>
                     </div>
                     <div class="metric-card reveal">
-                        <div class="metric-value" data-target="45" data-suffix="%">0%</div>
+                        <div class="metric-value" th:text="${portfolio.metrics['wiproFedEx']['mttrReduction']}" data-target="45" data-suffix="%">45%</div>
                         <div class="metric-label">MTTR Reduction</div>
                         <div class="metric-detail">Production support squad operational excellence</div>
                     </div>
                     <div class="metric-card reveal">
-                        <div class="metric-value" data-target="30" data-suffix="%">0%</div>
+                        <div class="metric-value" th:text="${portfolio.metrics['wiproFedEx']['downtimeReduction']}" data-target="30" data-suffix="%">30%</div>
                         <div class="metric-label">Downtime Reduction</div>
                         <div class="metric-detail">Year-over-year operational reliability</div>
                     </div>
                     <div class="metric-card reveal">
-                        <div class="metric-value" data-target="25" data-suffix="%">0%</div>
+                        <div class="metric-value" th:text="${portfolio.metrics['wiproFedEx']['incidentReduction']}" data-target="25" data-suffix="%">25%</div>
                         <div class="metric-label">Fewer Incidents</div>
                         <div class="metric-detail">Within six months via Splunk dashboards</div>
                     </div>
                     <div class="metric-card reveal">
-                        <div class="metric-value" data-target="35" data-suffix="%">0%</div>
+                        <div class="metric-value" th:text="${portfolio.metrics['wiproFedEx']['portalRenderImprovement']}" data-target="35" data-suffix="%">35%</div>
                         <div class="metric-label">Faster Portal Rendering</div>
                         <div class="metric-detail">IceFaces optimization improvements</div>
                     </div>
@@ -163,7 +163,7 @@
                     <div class="timeline-node reveal" data-step="2">
                         <div class="node-indicator investigate-indicator" aria-hidden="true"></div>
                         <h3>Investigation</h3>
-                        <p>Five-member support squad triages logs, metrics, and user impact.</p>
+                        <p><span th:text="${portfolio.metrics['wiproFedEx']['productionSupportSquadSize']}">5</span>-member support squad triages logs, metrics, and user impact.</p>
                     </div>
                     <div class="timeline-connector" aria-hidden="true"></div>
                     <div class="timeline-node reveal" data-step="3">
@@ -187,7 +187,7 @@
                     <div class="timeline-node reveal" data-step="6">
                         <div class="node-indicator prevent-indicator" aria-hidden="true"></div>
                         <h3>Prevention</h3>
-                        <p>Post-merge defects reduced by 20% through enforced reviews, test coverage, and automated checks.</p>
+                        <p>Post-merge defects reduced by <span th:text="${portfolio.metrics['wiproFedEx']['postMergeDefectReduction']}">20%</span> through enforced reviews, test coverage, and automated checks.</p>
                     </div>
                 </div>
             </div>
@@ -203,14 +203,14 @@
                 <div class="portal-grid">
                     <div class="portal-card reveal">
                         <div class="portal-stat">
-                            <span class="portal-stat-value">35%</span>
+                            <span class="portal-stat-value" th:text="${portfolio.metrics['wiproFedEx']['portalRenderImprovement']}">35%</span>
                             <span class="portal-stat-label">Faster Render Times</span>
                         </div>
                         <p>Achieved through IceFaces component optimization, partial page rendering, and reduced view-state overhead.</p>
                     </div>
                     <div class="portal-card reveal">
                         <div class="portal-stat">
-                            <span class="portal-stat-value">18%</span>
+                            <span class="portal-stat-value" th:text="${portfolio.metrics['wiproFedEx']['customerSatisfactionImprovement']}">18%</span>
                             <span class="portal-stat-label">Higher Satisfaction</span>
                         </div>
                         <p>Direct result of snappier portal responses and more reliable shipment tracking interactions.</p>
@@ -218,9 +218,9 @@
                     <div class="portal-card reveal">
                         <h3>Code Quality & Documentation</h3>
                         <ul class="portal-list">
-                            <li>Led code reviews across a 20-member team</li>
+                            <li>Led code reviews across a <span th:text="${portfolio.metrics['wiproFedEx']['teamSizeCodeReviews']}">20</span>-member team</li>
                             <li>Maintained comprehensive Confluence documentation</li>
-                            <li>Reduced post-merge defects by 20%</li>
+                            <li>Reduced post-merge defects by <span th:text="${portfolio.metrics['wiproFedEx']['postMergeDefectReduction']}">20%</span></li>
                         </ul>
                     </div>
                 </div>

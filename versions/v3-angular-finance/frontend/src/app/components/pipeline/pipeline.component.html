@@ -1,0 +1,28 @@
+<section id="pipeline" class="section pipeline" aria-labelledby="pipeline-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="pipeline-heading" class="section-title">Delivery Pipeline</h2>
+      <div class="title-line" aria-hidden="true"></div>
+      <p class="section-subtitle">Jenkins CI/CD with multi-stage quality gates, containerized deployments, and Kubernetes orchestration.</p>
+    </div>
+    <div class="pipeline-flow reveal">
+      <div class="pipeline-stage" *ngFor="let stage of ['Commit', 'Build', 'Unit Tests', 'Integration Tests', 'SAST', 'Staging', 'EKS Deploy']">
+        <div class="stage-dot" aria-hidden="true"></div>
+        <h3>{{stage}}</h3>
+      </div>
+    </div>
+    <div class="integration-grid reveal">
+      <div class="integration-card" *ngFor="let integration of [
+        { title: 'Fidelity Integration', desc: 'Custodial data reconciliation and reporting' },
+        { title: 'Custodial Providers', desc: 'Secure data exchange with external custodians' },
+        { title: 'Market Data APIs', desc: 'Four financial market-data providers' },
+        { title: 'Resilience4j', desc: 'Circuit breakers and rate limiters for API resilience' },
+        { title: 'Prometheus', desc: 'Health dashboards and SLA monitoring' },
+        { title: 'Docker / EKS', desc: 'Containerized deployments with Kubernetes orchestration' }
+      ]">
+        <h3>{{integration.title}}</h3>
+        <p>{{integration.desc}}</p>
+      </div>
+    </div>
+  </div>
+</section>

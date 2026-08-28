@@ -1,0 +1,67 @@
+<section id="architecture" class="section architecture" aria-labelledby="architecture-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="architecture-heading" class="section-title">Angular Component System</h2>
+      <div class="title-line" aria-hidden="true"></div>
+      <p class="section-subtitle">A shared component library that standardized UI across four retirement product lines.</p>
+    </div>
+    <div class="component-grid">
+      <div class="component-card reveal" *ngFor="let cat of [
+        { name: 'Account Management', items: 'Statements, balances, transactions' },
+        { name: 'Income Planning', items: 'Withdrawals, annuities, projections' },
+        { name: 'Beneficiary Services', items: 'Designations, forms, contacts' },
+        { name: 'Advisor Workspace', items: 'Client views, proposals, reports' }
+      ]">
+        <h3>{{cat.name}}</h3>
+        <p>{{cat.items}}</p>
+      </div>
+    </div>
+    <div class="architecture-stats reveal">
+      <div class="stat">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['reusableComponents'] || '40+'"></span>
+        <span class="stat-label">Reusable Components</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['productLines'] || '4'"></span>
+        <span class="stat-label">Product Lines</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['uiDevTimeReduction'] || '30%'"></span>
+        <span class="stat-label">UI Dev Time Saved</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="api-case-study" class="section api-case" aria-labelledby="api-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="api-heading" class="section-title">API Performance Case Study</h2>
+      <div class="title-line" aria-hidden="true"></div>
+      <p class="section-subtitle">How retirement APIs were transformed from sluggish to sub-100ms.</p>
+    </div>
+    <div class="latency-comparison reveal">
+      <div class="latency-bar before">
+        <div class="latency-fill" [style.width.%]="(latencyBefore / (latencyBefore + latencyAfter)) * 100"></div>
+        <div class="latency-label">
+          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseBefore'] || '320ms'}}</span>
+          <span class="latency-desc">Before</span>
+        </div>
+      </div>
+      <div class="latency-bar after">
+        <div class="latency-fill" [style.width.%]="(latencyAfter / (latencyBefore + latencyAfter)) * 100"></div>
+        <div class="latency-label">
+          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseAfter'] || '95ms'}}</span>
+          <span class="latency-desc">After</span>
+        </div>
+      </div>
+    </div>
+    <div class="architecture-layers reveal">
+      <div class="layer" *ngFor="let layer of ['Angular 15 Frontend', 'Spring Boot REST APIs', 'Oracle Database']">
+        <div class="layer-icon" aria-hidden="true">◈</div>
+        <h3>{{layer}}</h3>
+        <p>Enterprise-grade architecture with connection-pool tuning, query-plan analysis, and indexed data access.</p>
+      </div>
+    </div>
+  </div>
+</section>

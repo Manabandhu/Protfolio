@@ -1,0 +1,207 @@
+.architecture {
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 640px) {
+  .component-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .component-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.component-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  transition: all var(--transition-base);
+}
+
+.component-card:hover, .component-card:focus-within {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.component-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.component-card p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.architecture-stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .architecture-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.stat:hover, .stat:focus-within {
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-amber);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+}
+
+.stat-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.api-case {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.latency-comparison {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto 3rem;
+}
+
+@media (min-width: 640px) {
+  .latency-comparison {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.latency-bar {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  height: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.latency-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, var(--accent-indigo), var(--accent-amber));
+  border-radius: var(--radius-md);
+  transition: width 1.5s ease;
+}
+
+.latency-label {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+
+.latency-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+}
+
+.latency-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.architecture-layers {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .architecture-layers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.layer {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.layer:hover, .layer:focus-within {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.layer-icon {
+  font-size: 1.5rem;
+  color: var(--accent-indigo);
+  margin-bottom: 0.75rem;
+}
+
+.layer h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.layer p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

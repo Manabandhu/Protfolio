@@ -1,0 +1,113 @@
+.platform, .impact {
+  background: var(--bg-primary);
+}
+
+.platform {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .audience-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.audience-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.audience-card:hover, .audience-card:focus-within {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.audience-icon {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.audience-card h3 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.audience-card p {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .metrics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.metric-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  transition: all var(--transition-base);
+}
+
+.metric-card:hover, .metric-card:focus-within {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--accent-amber);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.metric-detail {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}

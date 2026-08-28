@@ -1,0 +1,27 @@
+<section id="hero" class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-gradient"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="container hero-content" *ngIf="!loading && !error && portfolio">
+    <div class="hero-badge reveal">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      <span>Portfolio Version 3</span>
+    </div>
+    <h1 id="hero-heading" class="hero-title reveal">{{portfolio.meta.name}}</h1>
+    <p class="hero-role reveal">Senior Software Developer</p>
+    <p class="hero-org reveal">TIAA <span aria-hidden="true">·</span> <span class="hero-period">October 2022 – June 2024</span></p>
+    <p class="hero-location reveal">Charlotte, North Carolina</p>
+    <p class="hero-proposition reveal">Built secure, scalable retirement platforms serving millions of users with Angular 15 shared component libraries, Spring Boot APIs, and enterprise-grade security.</p>
+    <div class="hero-actions reveal">
+      <a href="#platform" class="btn btn-primary">Explore Platform</a>
+      <a href="#architecture" class="btn btn-secondary">View Architecture</a>
+    </div>
+  </div>
+  <div class="container hero-content error-state" *ngIf="error">
+    <p class="error-message">{{error}}</p>
+  </div>
+  <div class="container hero-content loading-state" *ngIf="loading">
+    <p class="loading-message">Loading portfolio...</p>
+  </div>
+</section>

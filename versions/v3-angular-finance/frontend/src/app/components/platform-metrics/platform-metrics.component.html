@@ -1,0 +1,47 @@
+<section id="platform" class="section platform" aria-labelledby="platform-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="platform-heading" class="section-title">Retirement Platform Overview</h2>
+      <div class="title-line" aria-hidden="true"></div>
+      <p class="section-subtitle">Secure, accessible retirement platforms serving participants, retirees, advisors, and plan administrators.</p>
+    </div>
+    <div class="audience-grid">
+      <div class="audience-card reveal" *ngFor="let audience of ['Participants', 'Retirees', 'Advisors', 'Plan Administrators']">
+        <div class="audience-icon" aria-hidden="true">👥</div>
+        <h3>{{audience}}</h3>
+        <p>Secure access to retirement accounts, income planning, and beneficiary management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="impact" class="section impact" aria-labelledby="impact-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="impact-heading" class="section-title">Platform Impact</h2>
+      <div class="title-line" aria-hidden="true"></div>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card reveal" *ngFor="let metric of [
+        { key: 'apiResponseBefore', label: 'API Response Before', detail: 'Average latency across retirement APIs' },
+        { key: 'apiResponseAfter', label: 'API Response After', detail: 'After indexing, query tuning, and pool optimization' },
+        { key: 'reusableComponents', label: 'Reusable Components', detail: 'Angular shared component library' },
+        { key: 'productLines', label: 'Product Lines', detail: 'Adopted across retirement services' },
+        { key: 'customers', label: 'Customers Served', detail: 'Participants, retirees, and advisors' },
+        { key: 'apiAvailability', label: 'API Availability', detail: 'Resilience4j and Prometheus monitoring' },
+        { key: 'batchBefore', label: 'Batch Processing Before', detail: 'Spring Batch reconciliation runtime' },
+        { key: 'batchAfter', label: 'Batch Processing After', detail: 'After optimization and tuning' },
+        { key: 'deploymentFailureReduction', label: 'Fewer Deployment Failures', detail: 'Jenkins CI/CD with quality gates' },
+        { key: 'deliveryLeadTimeBefore', label: 'Delivery Lead Time Before', detail: 'From commit to production' },
+        { key: 'deliveryLeadTimeAfter', label: 'Delivery Lead Time After', detail: 'After pipeline automation' },
+        { key: 'uiDevTimeReduction', label: 'UI Development Time Saved', detail: 'Shared component library impact' },
+        { key: 'userBaseGrowth', label: 'User-Base Growth', detail: 'Platform adoption expansion' },
+        { key: 'onTimeSprintDelivery', label: 'On-Time Sprint Delivery', detail: 'Across seven quarters' }
+      ]">
+        <div class="metric-value">{{metrics[metric.key] || '—'}}</div>
+        <div class="metric-label">{{metric.label}}</div>
+        <div class="metric-detail">{{metric.detail}}</div>
+      </div>
+    </div>
+  </div>
+</section>

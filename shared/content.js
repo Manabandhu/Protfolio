@@ -89,6 +89,23 @@ export const portfolio = {
       splunkServices: "8",
       storedProceduresOptimized: "40+"
     },
+    tiaa: {
+      apiResponseBefore: "320ms",
+      apiResponseAfter: "95ms",
+      reusableComponents: "40+",
+      productLines: "4",
+      customers: "5M+",
+      apiAvailability: "99.95%",
+      batchBefore: "4.5 hours",
+      batchAfter: "55 minutes",
+      deploymentFailureReduction: "70%",
+      deliveryLeadTimeBefore: "3 days",
+      deliveryLeadTimeAfter: "4 hours",
+      uiDevTimeReduction: "30%",
+      userBaseGrowth: "12%",
+      onTimeSprintDelivery: "97%",
+      sprintQuarters: "7"
+    },
     goldmanSachs: {
       products: "8+",
       dailyTransactions: "500K+",
@@ -125,7 +142,7 @@ export const portfolio = {
       name: "Angular Finance Portfolio",
       period: "2022 – 2024",
       technology: "Angular 15, TypeScript, Spring Boot, Oracle",
-      status: "planned",
+      status: "active",
       description: "Retirement platforms, reusable components, accessibility, OAuth/JWT, CI/CD, performance, financial-services workflows."
     },
     {

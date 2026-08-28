@@ -1,0 +1,23 @@
+<section id="security" class="section security" aria-labelledby="security-heading">
+  <div class="container" *ngIf="portfolio">
+    <div class="section-header reveal">
+      <h2 id="security-heading" class="section-title">Security and Trust</h2>
+      <div class="title-line" aria-hidden="true"></div>
+      <p class="section-subtitle">Enterprise-grade authentication, compliance, and penetration-tested security controls.</p>
+    </div>
+    <div class="security-grid">
+      <div class="security-card reveal" *ngFor="let control of [
+        { title: 'OAuth 2.0', desc: 'Secure authorization framework for retirement platform access' },
+        { title: 'JWT Lifecycle', desc: 'Token issuance, validation, and secure session management' },
+        { title: 'Refresh Token Rotation', desc: 'Mitigates replay attacks and strengthens session integrity' },
+        { title: 'SOC2 Type II', desc: 'Achieved three weeks ahead of deadline' },
+        { title: 'OWASP Top 10', desc: 'Addressed injection, broken auth, XSS, and security misconfigurations' },
+        { title: 'Penetration Testing', desc: 'Coordinated assessments and remediation tracking' }
+      ]">
+        <div class="security-icon" aria-hidden="true">🔒</div>
+        <h3>{{control.title}}</h3>
+        <p>{{control.desc}}</p>
+      </div>
+    </div>
+  </div>
+</section>
