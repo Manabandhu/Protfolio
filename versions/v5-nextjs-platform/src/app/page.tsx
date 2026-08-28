@@ -3,7 +3,6 @@ import { Metadata } from 'next';
 import HeroClient from './hero-client';
 import MetricsClient from './metrics-client';
 import ArchitectureClient from './architecture-client';
-import ImpactClient from './impact-client';
 import EvolutionClient from './evolution-client';
 import FooterClient from './footer-client';
 
@@ -30,7 +29,7 @@ export default async function Home() {
             <div className="w-12 h-1 bg-gradient-to-r from-accent-indigo to-accent-amber rounded-full mx-auto" />
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {productAreas.map((area, i) => (
+            {productAreas.map((area) => (
               <div key={area} className="p-4 rounded-xl border border-border bg-bg-card text-center hover:border-border-hover transition-colors">
                 <span className="text-sm font-semibold text-text-secondary">{area}</span>
               </div>

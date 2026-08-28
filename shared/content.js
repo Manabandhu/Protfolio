@@ -180,8 +180,8 @@ export const portfolio = {
       id: "v6",
       name: "AI-Native Portfolio",
       period: "Future-Ready",
-      technology: "Next.js, React, TypeScript, Tailwind, Motion, WebGL",
-      status: "planned",
+      technology: "Next.js 16, React 19, TypeScript, Tailwind, Motion, Lucide React",
+      status: "active",
       description: "AI-augmented engineering, agent workflows, test generation, intelligent case-study exploration, architecture visualization, future-ready engineering leadership."
     }
   ]
