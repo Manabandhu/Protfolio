@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${portfolio.meta.name} + ' — Enterprise Java Portfolio'">Rajesh Koyi — Enterprise Java Portfolio</title>
+    <meta th:content="${portfolio.meta.name + ' — Enterprise Java Portfolio. Wipro/FedEx era showcasing enterprise logistics systems, Spring Boot, and operational reliability.'}" name="description">
+    <meta name="theme-color" content="#0b1120">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="/" class="logo" aria-label="Rajesh Koyi Home">
+                <span class="logo-icon" aria-hidden="true">◈</span>
+                <span class="logo-text">RK</span>
+            </a>
+            <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Operations</a></li>
+                    <li><a href="#dashboard" class="nav-link">Impact</a></li>
+                    <li><a href="#architecture" class="nav-link">Architecture</a></li>
+                    <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li><a href="#portal" class="nav-link">Portal</a></li>
+                    <li><a href="#evolution" class="nav-link">Evolution</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle display mode" title="Toggle display mode">
+                    <span class="theme-icon" aria-hidden="true">◐</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="hero" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-grid-bg" aria-hidden="true"></div>
+            <div class="container hero-content reveal">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot" aria-hidden="true"></span>
+                    <span>Portfolio Version 2</span>
+                </div>
+                <h1 id="hero-heading" class="hero-title">
+                    <span th:text="${portfolio.meta.name}">Rajesh Koyi</span>
+                </h1>
+                <p class="hero-role" th:text="${'Project Engineer — Software Development'}">Project Engineer — Software Development</p>
+                <p class="hero-org">Wipro Ltd. <span aria-hidden="true">/</span> FedEx <span class="hero-period" th:text="${'January 2020 – August 2021'}">January 2020 – August 2021</span></p>
+                <p class="hero-location">Hyderabad, India</p>
+                <p class="hero-proposition">Built and operated enterprise Java/Spring Boot logistics systems supporting <strong>$500M+</strong> in annual shipment operations with measurable reliability and performance gains.</p>
+                <div class="hero-actions">
+                    <a href="#dashboard" class="btn btn-primary">View Engineering Impact</a>
+                    <a href="#architecture" class="btn btn-secondary">Explore Architecture</a>
+                </div>
+            </div>
+            <div class="hero-lines" aria-hidden="true">
+                <div class="route-line route-line-1"></div>
+                <div class="route-line route-line-2"></div>
+                <div class="route-line route-line-3"></div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="section dashboard" aria-labelledby="dashboard-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="dashboard-heading" class="section-title">Operations Impact Dashboard</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                    <p class="section-subtitle">Measurable improvements delivered across global logistics and shipment operations.</p>
+                </div>
+                <div class="metrics-grid">
+                    <div class="metric-card reveal">
+                        <div class="metric-value" data-target="22" data-suffix="%">0%</div>
+                        <div class="metric-label">Throughput Improvement</div>
+                        <div class="metric-detail">Async processing, thread-pool tuning, Redis caching</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value" data-target="45" data-suffix="%">0%</div>
+                        <div class="metric-label">MTTR Reduction</div>
+                        <div class="metric-detail">Production support squad operational excellence</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value" data-target="30" data-suffix="%">0%</div>
+                        <div class="metric-label">Downtime Reduction</div>
+                        <div class="metric-detail">Year-over-year operational reliability</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value" data-target="25" data-suffix="%">0%</div>
+                        <div class="metric-label">Fewer Incidents</div>
+                        <div class="metric-detail">Within six months via Splunk dashboards</div>
+                    </div>
+                    <div class="metric-card reveal">
+                        <div class="metric-value" data-target="35" data-suffix="%">0%</div>
+                        <div class="metric-label">Faster Portal Rendering</div>
+                        <div class="metric-detail">IceFaces optimization improvements</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="section architecture" aria-labelledby="architecture-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="architecture-heading" class="section-title">Enterprise Architecture</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                    <p class="section-subtitle">Production-grade Java/Spring Boot services powering global logistics operations.</p>
+                </div>
+                <div class="architecture-grid">
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">⚙</div>
+                        <h3>Java / Spring Boot Services</h3>
+                        <p>Three enterprise applications built with Java 11 and Spring Boot, handling high-volume shipment and logistics workflows with REST APIs.</p>
+                    </div>
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">🗄</div>
+                        <h3>Oracle Data Layer</h3>
+                        <p>Redesigned schemas and optimized 40+ stored procedures to improve data throughput and reporting performance.</p>
+                    </div>
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">⚡</div>
+                        <h3>Redis Caching</h3>
+                        <p>Intelligent caching layer that improved system throughput by 22% and reduced database load.</p>
+                    </div>
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">🔄</div>
+                        <h3>Async Processing</h3>
+                        <p>Asynchronous workflows with thread-pool tuning for non-blocking, high-concurrency operations.</p>
+                    </div>
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">🐳</div>
+                        <h3>Docker / Kubernetes</h3>
+                        <p>Containerized deployments with orchestrated scaling for resilient, production-ready services.</p>
+                    </div>
+                    <div class="arch-card reveal">
+                        <div class="arch-icon" aria-hidden="true">📊</div>
+                        <h3>Splunk Observability</h3>
+                        <p>Comprehensive dashboards across eight services providing real-time operational visibility and proactive alerting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="section timeline-section" aria-labelledby="timeline-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="timeline-heading" class="section-title">Production Support Lifecycle</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                    <p class="section-subtitle">How enterprise issues were investigated, resolved, and prevented.</p>
+                </div>
+                <div class="timeline-flow" id="timeline-flow">
+                    <div class="timeline-node reveal" data-step="1">
+                        <div class="node-indicator alert-indicator" aria-hidden="true"></div>
+                        <h3>Alert</h3>
+                        <p>Splunk dashboards and monitoring detect anomalies across services.</p>
+                    </div>
+                    <div class="timeline-connector" aria-hidden="true"></div>
+                    <div class="timeline-node reveal" data-step="2">
+                        <div class="node-indicator investigate-indicator" aria-hidden="true"></div>
+                        <h3>Investigation</h3>
+                        <p>Five-member support squad triages logs, metrics, and user impact.</p>
+                    </div>
+                    <div class="timeline-connector" aria-hidden="true"></div>
+                    <div class="timeline-node reveal" data-step="3">
+                        <div class="node-indicator rca-indicator" aria-hidden="true"></div>
+                        <h3>Root Cause Analysis</h3>
+                        <p>Collaborative analysis identifies Oracle schema bottlenecks, thread contention, or frontend render issues.</p>
+                    </div>
+                    <div class="timeline-connector" aria-hidden="true"></div>
+                    <div class="timeline-node reveal" data-step="4">
+                        <div class="node-indicator fix-indicator" aria-hidden="true"></div>
+                        <h3>Remediation</h3>
+                        <p>Deploy fixes with Spring Boot patches, schema updates, cache invalidation, or IceFaces optimizations.</p>
+                    </div>
+                    <div class="timeline-connector" aria-hidden="true"></div>
+                    <div class="timeline-node reveal" data-step="5">
+                        <div class="node-indicator doc-indicator" aria-hidden="true"></div>
+                        <h3>Runbook & Documentation</h3>
+                        <p>Confluence pages updated with steps, code review notes, and cross-team handoffs.</p>
+                    </div>
+                    <div class="timeline-connector" aria-hidden="true"></div>
+                    <div class="timeline-node reveal" data-step="6">
+                        <div class="node-indicator prevent-indicator" aria-hidden="true"></div>
+                        <h3>Prevention</h3>
+                        <p>Post-merge defects reduced by 20% through enforced reviews, test coverage, and automated checks.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portal" class="section portal" aria-labelledby="portal-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="portal-heading" class="section-title">FedEx Customer Portal</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                    <p class="section-subtitle">Frontend engineering that improved customer experience and operational efficiency.</p>
+                </div>
+                <div class="portal-grid">
+                    <div class="portal-card reveal">
+                        <div class="portal-stat">
+                            <span class="portal-stat-value">35%</span>
+                            <span class="portal-stat-label">Faster Render Times</span>
+                        </div>
+                        <p>Achieved through IceFaces component optimization, partial page rendering, and reduced view-state overhead.</p>
+                    </div>
+                    <div class="portal-card reveal">
+                        <div class="portal-stat">
+                            <span class="portal-stat-value">18%</span>
+                            <span class="portal-stat-label">Higher Satisfaction</span>
+                        </div>
+                        <p>Direct result of snappier portal responses and more reliable shipment tracking interactions.</p>
+                    </div>
+                    <div class="portal-card reveal">
+                        <h3>Code Quality & Documentation</h3>
+                        <ul class="portal-list">
+                            <li>Led code reviews across a 20-member team</li>
+                            <li>Maintained comprehensive Confluence documentation</li>
+                            <li>Reduced post-merge defects by 20%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="principles" class="section principles" aria-labelledby="principles-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="principles-heading" class="section-title">Engineering Principles</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                </div>
+                <div class="principles-grid">
+                    <div class="principle-card reveal">
+                        <div class="principle-icon" aria-hidden="true">🛡</div>
+                        <h3>Reliability</h3>
+                        <p>Systems must operate predictably under load. Downtime is measured, tracked, and reduced.</p>
+                    </div>
+                    <div class="principle-card reveal">
+                        <div class="principle-icon" aria-hidden="true">📈</div>
+                        <h3>Measurable Performance</h3>
+                        <p>Every optimization targets a metric. Throughput, latency, and incident rates are not optional.</p>
+                    </div>
+                    <div class="principle-card reveal">
+                        <div class="principle-icon" aria-hidden="true">🔧</div>
+                        <h3>Operational Ownership</h3>
+                        <p>Engineers own production behavior, not just delivery. Support means prevention.</p>
+                    </div>
+                    <div class="principle-card reveal">
+                        <div class="principle-icon" aria-hidden="true">📘</div>
+                        <h3>Clear Documentation</h3>
+                        <p>Confluence pages, runbooks, and inline comments ensure knowledge survives turnover.</p>
+                    </div>
+                    <div class="principle-card reveal">
+                        <div class="principle-icon" aria-hidden="true">🤝</div>
+                        <h3>Cross-Team Collaboration</h3>
+                        <p>Logistics operations span teams. Effective coordination is as important as clean code.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="evolution" class="section evolution" aria-labelledby="evolution-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="evolution-heading" class="section-title">Portfolio Evolution</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                    <p class="section-subtitle">From engineering foundations to AI-native leadership. Six versions, one continuous story.</p>
+                </div>
+                <div class="evolution-track">
+                    <div class="evolution-item reveal" th:each="ver, iterStat : ${portfolio.versions}">
+                        <div class="evolution-marker" th:classappend="${ver.status == 'active' ? 'active' : ''}" aria-hidden="true"></div>
+                        <div class="evolution-card" th:classappend="${ver.status == 'active' ? 'status-active' : ''}">
+                            <span class="evolution-status" th:classappend="${ver.status == 'active' ? 'active' : ''}" th:text="${ver.status == 'active' ? 'Current' : 'Planned'}">Planned</span>
+                            <h3 th:text="${ver.name}">Version Name</h3>
+                            <p class="evolution-period" th:text="${ver.period}">Period</p>
+                            <p class="evolution-tech" th:text="${ver.technology}">Technology</p>
+                            <p class="evolution-desc" th:text="${ver.description}">Description</p>
+                            <a th:if="${ver.id == 'v1'}" th:href="@{/../v1-klu-foundation/}" class="evolution-link">Visit V1</a>
+                            <a th:if="${ver.id == 'v3'}" th:href="@{/../v3-angular-finance/}" class="evolution-link">Preview V3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+                    <div class="title-line" aria-hidden="true"></div>
+                </div>
+                <div class="contact-card reveal">
+                    <p class="contact-intro">Interested in enterprise Java, logistics systems, or operational excellence? Reach out through the channels below.</p>
+                    <div class="contact-links" th:unless="${#arrays.isEmpty(portfolio.versions)}">
+                        <p class="contact-note">Contact information will be added when publicly available.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="footer-name" th:text="${portfolio.meta.name}">Rajesh Koyi</span>
+                <span class="footer-divider" aria-hidden="true">|</span>
+                <span class="footer-era">Enterprise Java Era</span>
+            </div>
+            <p class="footer-tech">Java · Spring Boot · Thymeleaf · Oracle · Docker · Kubernetes</p>
+            <p class="footer-copy">Version 2 — Wipro/FedEx Portfolio. Built with server-rendered Spring Boot architecture.</p>
+        </div>
+    </footer>
+
+    <script th:src="@{/js/main.js}"></script>
+</body>
+</html>

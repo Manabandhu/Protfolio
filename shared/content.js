@@ -74,6 +74,21 @@ export const portfolio = {
     "Quality": ["Storybook", "Vite", "WCAG 2.1 AA", "Responsive UI"]
   },
   metrics: {
+    wiproFedEx: {
+      throughputImprovement: "22%",
+      mttrReduction: "45%",
+      downtimeReduction: "30%",
+      incidentReduction: "25%",
+      portalRenderImprovement: "35%",
+      customerSatisfactionImprovement: "18%",
+      postMergeDefectReduction: "20%",
+      annualShipmentOperations: "$500M+",
+      teamSizeCodeReviews: "20",
+      productionSupportSquadSize: "5",
+      enterpriseApplicationsBuilt: "3",
+      splunkServices: "8",
+      storedProceduresOptimized: "40+"
+    },
     goldmanSachs: {
       products: "8+",
       dailyTransactions: "500K+",
@@ -102,7 +117,7 @@ export const portfolio = {
       name: "Enterprise Java Portfolio",
       period: "2020 – 2021",
       technology: "Enterprise Java / Spring Boot visual style",
-      status: "planned",
+      status: "active",
       description: "Logistics systems, APIs, Oracle, performance, production support, Docker, Kubernetes, operational reliability."
     },
     {
