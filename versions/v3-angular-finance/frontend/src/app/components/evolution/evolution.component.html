@@ -6,7 +6,7 @@
       <p class="section-subtitle">From engineering foundations to AI-native leadership. Six versions, one continuous story.</p>
     </div>
     <div class="evolution-grid">
-      <div class="evolution-card reveal" *ngFor="let ver of portfolio.versions" [class.status-active]="ver.status === 'active'">
+      <div class="card card-hover reveal" *ngFor="let ver of portfolio.versions" [class.status-active]="ver.status === 'active'">
         <span class="evolution-status" [class.active]="ver.status === 'active'">{{ver.status === 'active' ? 'Current' : 'Planned'}}</span>
         <h3>{{ver.name}}</h3>
         <p class="evolution-period">{{ver.period}}</p>

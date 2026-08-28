@@ -6,7 +6,7 @@
       <p class="section-subtitle">A shared component library that standardized UI across four retirement product lines.</p>
     </div>
     <div class="component-grid">
-      <div class="component-card reveal" *ngFor="let cat of [
+      <div class="card card-hover reveal" *ngFor="let cat of [
         { name: 'Account Management', items: 'Statements, balances, transactions' },
         { name: 'Income Planning', items: 'Withdrawals, annuities, projections' },
         { name: 'Beneficiary Services', items: 'Designations, forms, contacts' },
@@ -17,16 +17,16 @@
       </div>
     </div>
     <div class="architecture-stats reveal">
-      <div class="stat">
-        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['reusableComponents'] || '40+'"></span>
+      <div class="card">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['reusableComponents'] || '—'"></span>
         <span class="stat-label">Reusable Components</span>
       </div>
-      <div class="stat">
-        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['productLines'] || '4'"></span>
+      <div class="card">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['productLines'] || '—'"></span>
         <span class="stat-label">Product Lines</span>
       </div>
-      <div class="stat">
-        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['uiDevTimeReduction'] || '30%'"></span>
+      <div class="card">
+        <span class="stat-value" [innerText]="portfolio.metrics['tiaa']['uiDevTimeReduction'] || '—'"></span>
         <span class="stat-label">UI Dev Time Saved</span>
       </div>
     </div>
@@ -44,14 +44,14 @@
       <div class="latency-bar before">
         <div class="latency-fill" [style.width.%]="(latencyBefore / (latencyBefore + latencyAfter)) * 100"></div>
         <div class="latency-label">
-          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseBefore'] || '320ms'}}</span>
+          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseBefore'] || '—'}}</span>
           <span class="latency-desc">Before</span>
         </div>
       </div>
       <div class="latency-bar after">
         <div class="latency-fill" [style.width.%]="(latencyAfter / (latencyBefore + latencyAfter)) * 100"></div>
         <div class="latency-label">
-          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseAfter'] || '95ms'}}</span>
+          <span class="latency-value">{{portfolio.metrics['tiaa']['apiResponseAfter'] || '—'}}</span>
           <span class="latency-desc">After</span>
         </div>
       </div>
