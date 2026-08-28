@@ -1,0 +1,17 @@
+target/
+!.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
+.mvn
+*.iml
+.idea
+.vscode
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
