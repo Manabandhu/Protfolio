@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "name": "Rajesh Koyi",
+    "title": "Senior Software Engineer",
+    "location": "Dallas, Texas",
+    "targetRoles": ["Senior Software Engineer", "Staff Software Engineer"],
+    "availability": "Open to remote work and relocation"
+  },
+  "contact": {
+    "email": null,
+    "linkedin": null,
+    "github": null,
+    "website": null
+  },
+  "education": [
+    {
+      "institution": "Arkansas State University",
+      "degree": "M.S. Computer and Information Sciences",
+      "period": "August 2021 – May 2023",
+      "type": "graduate"
+    },
+    {
+      "institution": "KL University",
+      "degree": "B.Tech. Electronics and Communications Engineering",
+      "period": "2015 – 2019",
+      "type": "undergraduate"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Goldman Sachs",
+      "role": "Senior Software Engineer",
+      "period": "August 2024 – Present",
+      "description": "Financial products, distributed systems, design systems, performance, observability, security.",
+      "technologies": ["Next.js 14", "React", "Nx", "Micro-frontends", "AWS", "GraphQL"]
+    },
+    {
+      "company": "TIAA",
+      "role": "Senior Software Developer",
+      "period": "October 2022 – June 2024",
+      "description": "Retirement platforms, reusable components, accessibility, OAuth/JWT, CI/CD, performance, financial-services workflows.",
+      "technologies": ["Angular 15", "TypeScript", "Spring Boot", "Oracle", "OAuth 2.0", "JWT"]
+    },
+    {
+      "company": "Wipro Ltd. / FedEx",
+      "role": "Project Engineer, Software Development",
+      "period": "January 2020 – August 2021",
+      "description": "Logistics systems, APIs, Oracle, performance, production support, Docker, Kubernetes, operational reliability.",
+      "technologies": ["Java", "Spring Boot", "Docker", "Kubernetes", "Oracle", "IceFaces"]
+    },
+    {
+      "institution": "Arkansas State University",
+      "role": "Graduate Student",
+      "period": "August 2021 – May 2023",
+      "description": "M.S. Computer and Information Sciences",
+      "technologies": ["Java", "Algorithms", "Databases"]
+    },
+    {
+      "institution": "KL University",
+      "role": "Undergraduate Student",
+      "period": "2015 – 2019",
+      "description": "B.Tech. Electronics and Communications Engineering. Maze-solving robot publication, LabVIEW, project training.",
+      "technologies": ["C", "Java", "LabVIEW", "Electronics"]
+    }
+  ],
+  "skills": {
+    "Frontend": ["HTML5", "CSS3", "JavaScript", "TypeScript", "Angular 15", "React 18", "Next.js 14", "Tailwind CSS", "Material UI"],
+    "Backend": ["Java", "Spring Boot", "Spring Security", "REST APIs", "GraphQL"],
+    "Cloud & DevOps": ["AWS", "Docker", "Kubernetes", "Terraform", "Helm"],
+    "Databases": ["Oracle", "MongoDB", "PostgreSQL", "Redis"],
+    "Architecture": ["Nx monorepo", "Micro-frontends", "Module Federation"],
+    "Security": ["OAuth 2.0", "SAML 2.0", "OpenID Connect", "JWT", "OWASP"],
+    "AI & Tools": ["GitHub Copilot Agents", "Claude AI Agents", "Devin AI", "LangChain"],
+    "Quality": ["Storybook", "Vite", "WCAG 2.1 AA", "Responsive UI"]
+  },
+  "metrics": {
+    "wiproFedEx": {
+      "throughputImprovement": "22%",
+      "mttrReduction": "45%",
+      "downtimeReduction": "30%",
+      "incidentReduction": "25%",
+      "portalRenderImprovement": "35%",
+      "customerSatisfactionImprovement": "18%",
+      "postMergeDefectReduction": "20%",
+      "annualShipmentOperations": "$500M+",
+      "teamSizeCodeReviews": "20",
+      "productionSupportSquadSize": "5",
+      "enterpriseApplicationsBuilt": "3",
+      "splunkServices": "8",
+      "storedProceduresOptimized": "40+"
+    },
+    "tiaa": {
+      "apiResponseBefore": "320ms",
+      "apiResponseAfter": "95ms",
+      "reusableComponents": "40+",
+      "productLines": "4",
+      "customers": "5M+",
+      "apiAvailability": "99.95%",
+      "batchBefore": "4.5 hours",
+      "batchAfter": "55 minutes",
+      "deploymentFailureReduction": "70%",
+      "deliveryLeadTimeBefore": "3 days",
+      "deliveryLeadTimeAfter": "4 hours",
+      "uiDevTimeReduction": "30%",
+      "userBaseGrowth": "12%",
+      "onTimeSprintDelivery": "97%",
+      "sprintQuarters": "7"
+    },
+    "reactDesignSystem": {
+      "componentCount": "60+",
+      "productTeams": "5",
+      "uiConsistency": "95%",
+      "handoffReduction": "60%"
+    },
+    "goldmanSachs": {
+      "products": "8+",
+      "dailyTransactions": "500K+",
+      "users": "15,000+",
+      "codeDuplicationReduction": "42%",
+      "featureDeliveryFaster": "35%",
+      "testCoverageBefore": "58%",
+      "testCoverageAfter": "93%",
+      "firstContentfulPaintImprovement": "48%",
+      "clientMemoryFootprintReduction": "31%",
+      "p1IncidentReduction": "35%",
+      "microservicesCount": "10+",
+      "criticalCveFreeMonths": "12+",
+      "productAreas": ["Benefits", "Compensation", "Deferred Compensation", "Equity Awards", "Stock Plans", "Carry", "Wealth Management"]
+    }
+  },
+  "publications": [
+    {
+      "title": "Maze-Solving Robot",
+      "context": "KL University undergraduate research",
+      "year": "2019",
+      "description": "Developed an autonomous maze-solving robot using embedded systems and algorithmic pathfinding."
+    }
+  ],
+  "versions": [
+    {
+      "id": "v1",
+      "name": "KLU Foundation Portfolio",
+      "period": "2015 – 2019",
+      "technology": "Semantic HTML, CSS, Vanilla JavaScript",
+      "status": "active",
+      "description": "Engineering student journey, electronics background, early software foundation, maze-solving robot publication, LabVIEW and project training."
+    },
+    {
+      "id": "v2",
+      "name": "Enterprise Java Portfolio",
+      "period": "2020 – 2021",
+      "technology": "Enterprise Java / Spring Boot visual style",
+      "status": "active",
+      "description": "Logistics systems, APIs, Oracle, performance, production support, Docker, Kubernetes, operational reliability."
+    },
+    {
+      "id": "v3",
+      "name": "Angular Finance Portfolio",
+      "period": "2022 – 2024",
+      "technology": "Angular 15, TypeScript, Spring Boot, Oracle",
+      "status": "active",
+      "description": "Retirement platforms, reusable components, accessibility, OAuth/JWT, CI/CD, performance, financial-services workflows."
+    },
+    {
+      "id": "v4",
+      "name": "React Design-System Portfolio",
+      "period": "Portfolio Evolution Stage",
+      "technology": "React 18, TypeScript, Tailwind CSS, Storybook, Vite",
+      "status": "active",
+      "description": "Component architecture, reusable UI systems, accessibility, responsive design, frontend engineering maturity."
+    },
+    {
+      "id": "v5",
+      "name": "Next.js Platform Portfolio",
+      "period": "2024 – Present",
+      "technology": "Next.js 14, React, App Router, Nx, Micro-frontends, AWS",
+      "status": "active",
+      "description": "Financial products, distributed systems, 8+ internal products, 500K+ daily transactions, 15,000+ users, design systems, performance, observability, security."
+    },
+    {
+      "id": "v6",
+      "name": "AI-Native Portfolio",
+      "period": "Future-Ready",
+      "technology": "Next.js, React, TypeScript, Tailwind, Motion, WebGL",
+      "status": "planned",
+      "description": "AI-augmented engineering, agent workflows, test generation, intelligent case-study exploration, architecture visualization, future-ready engineering leadership."
+    }
+  ]
+}

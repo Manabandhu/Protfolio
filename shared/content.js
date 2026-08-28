@@ -115,9 +115,18 @@ export const portfolio = {
     goldmanSachs: {
       products: "8+",
       dailyTransactions: "500K+",
-      users: "15,000+"
-    }
-  },
+      users: "15,000+",
+      codeDuplicationReduction: "42%",
+      featureDeliveryFaster: "35%",
+      testCoverageBefore: "58%",
+      testCoverageAfter: "93%",
+      firstContentfulPaintImprovement: "48%",
+      clientMemoryFootprintReduction: "31%",
+      p1IncidentReduction: "35%",
+      microservicesCount: "10+",
+      criticalCveFreeMonths: "12+",
+      productAreas: ["Benefits", "Compensation", "Deferred Compensation", "Equity Awards", "Stock Plans", "Carry", "Wealth Management"]
+    },
   publications: [
     {
       title: "Maze-Solving Robot",
@@ -164,7 +173,7 @@ export const portfolio = {
       name: "Next.js Platform Portfolio",
       period: "2024 – Present",
       technology: "Next.js 14, React, App Router, Nx, Micro-frontends, AWS",
-      status: "planned",
+      status: "active",
       description: "Financial products, distributed systems, 8+ internal products, 500K+ daily transactions, 15,000+ users, design systems, performance, observability, security."
     },
     {
