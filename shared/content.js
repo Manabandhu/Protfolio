@@ -106,6 +106,12 @@ export const portfolio = {
       onTimeSprintDelivery: "97%",
       sprintQuarters: "7"
     },
+    reactDesignSystem: {
+      componentCount: "60+",
+      productTeams: "5",
+      uiConsistency: "95%",
+      handoffReduction: "60%"
+    },
     goldmanSachs: {
       products: "8+",
       dailyTransactions: "500K+",
@@ -150,7 +156,7 @@ export const portfolio = {
       name: "React Design-System Portfolio",
       period: "Portfolio Evolution Stage",
       technology: "React 18, TypeScript, Tailwind CSS, Storybook, Vite",
-      status: "planned",
+      status: "active",
       description: "Component architecture, reusable UI systems, accessibility, responsive design, frontend engineering maturity."
     },
     {
